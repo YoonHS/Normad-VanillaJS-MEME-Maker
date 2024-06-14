@@ -7,7 +7,64 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="color-options">
+      <input type="color" id="color" />
+      <div
+        class="color-option"
+        sytle="background-color: #777777;"
+        data-color="#777777"
+      ></div>
+      <div
+        class="color-option"
+        sytle="background-color: #00ffff;"
+        data-color="#00ffff"
+      ></div>
+      <div
+        class="color-option"
+        sytle="background-color: #ff00ff;"
+        data-color="#ff00ff"
+      ></div>
+      <div
+        class="color-option"
+        sytle="background-color: #ffff00;"
+        data-color="#ffff00"
+      ></div>
+      <div
+        class="color-option"
+        sytle="background-color: #00ff00;"
+        data-color="#00ff00"
+      ></div>
+      <div
+        class="color-option"
+        sytle="background-color: #0000ff;"
+        data-color="#0000ff"
+      ></div>
+      <div
+        class="color-option"
+        sytle="background-color: #ff0000;"
+        data-color="#ff0000"
+      ></div>
+    </div>
+
     <canvas></canvas>
+    <div class="btns">
+      <input
+        id="line-width"
+        type="range"
+        id="size"
+        min="1"
+        max="10"
+        value="5"
+        step="0.5"
+      />
+
+      <button id="mode-btn">Fill</button>
+      <button id="destroy-btn">Destroy</button>
+      <button id="eraser-btn">Eraser</button>
+      <input type="file" id="file" accept="image/*" />
+      <input type="text" id="text" placeholder="write and then double click" />
+      <button id="save">Save</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
